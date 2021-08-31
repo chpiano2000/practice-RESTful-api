@@ -10,4 +10,4 @@ python3 main.py
 **q** (required): city name 
 **units** (optional): Units of measurement. But i recommend don't do anything with this parameters
 ```
-- endpoints: `/<appid>`
+- endpoints: `http://127.0.0.1:5000/<appid>`
