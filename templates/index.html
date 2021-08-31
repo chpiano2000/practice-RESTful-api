@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Forecast</title>
+</head>
+<body>
+  <table style="width: 100%; text-align: center">
+    <caption style="font-weight:bold; font-size: 70px; ">NEXT 5 DAYS FORECAST</caption>
+    <tr>
+      {% for result in results %}
+        <td style="font-weight:bold; font-size:20px; padding: 20px 0;">{{result.day}}</td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for result in results %}
+        <td>{{result.main}}</td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for result in results %}
+        <td>{{result.temp}}</td>
+      {% endfor %}
+    </tr>
+    <tr>
+      {% for result in results %}
+        <td>{{result.visibility}}</td>
+      {% endfor %}
+    </tr>
+  </table>
+</body>
+</html>
